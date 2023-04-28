@@ -1,7 +1,7 @@
 {
   "name": "finalassn",
   "version": "1.0.0",
-  "description": "The goal of this assignment is to utilize a backend API server we created and connect that with a frontend interface (ideally can be run in the browser)",
+  "description": "The goal of this assignment is to utilize a backend API server we created and connect that with a frontend interface (ideally can be run in a browser)",
   "main": "server.js",
   "type": "module",
   "scripts": {
