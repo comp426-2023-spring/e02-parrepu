@@ -1,7 +1,7 @@
 {
-  "name": "html-cs-js-demo",
+  "name": "finalassn",
   "version": "1.0.0",
-  "description": "This is the base code for an html+css+js demo non-assignment (extra credit).",
+  "description": "The goal of this assignment is to utilize a backend API server we created and connect that with a frontend interface (ideally can be run in the browser)",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -20,11 +20,16 @@
     "express",
     "server"
   ],
-  "author": "@jdmar3",
+  "author": "parrepu",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "express": "^4.18.2",
     "minimist": "^1.2.8",
     "morgan": "^1.10.0"
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "devDependencies": {}
 }
