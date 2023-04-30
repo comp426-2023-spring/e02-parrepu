@@ -103,7 +103,7 @@ process.on('SIGINT', () => {
     })
 })
 // Everything after this was added from lecture (subject to change) -> Change endpoints to suit this assignment?
-// import {rps, rplsls} from "./lib/rpsls.js"; // Do I put the lib and bin folders into the public directory? | What's the path?
+//import {rps, rplsls} from "./lib/rpsls.js"; // Do I put the lib and bin folders into the public directory? | What's the path?
 
 app.get('/app/', (req, res, next) => {
   res.status(200).send('200 OK');

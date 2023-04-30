@@ -25,11 +25,11 @@
   "dependencies": {
     "express": "^4.18.2",
     "minimist": "^1.2.8",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
   },
   "directories": {
     "doc": "docs",
     "example": "examples"
-  },
-  "devDependencies": {}
+  }
 }
