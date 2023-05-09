@@ -7,7 +7,8 @@ function showHideShots() { // Use 'let' here
     //let radiorps = document.getElementsByClass('rps');
     //let radiorpsls = document.getElementsByClass('rpsls');
 
-    if (check.checked == true){ // Can do another nested if-then statement in here
+    if (check.checked == true){ 
+        // See if you can do another nested if-then statement in here
         $('.shots').show()
     } else {
         $('.shots').hide()
@@ -15,25 +16,32 @@ function showHideShots() { // Use 'let' here
 
 }
 
-function  startOver () { // We simply have to set the form (following makes selections to go back to default)
+function  startOver () { 
+    // We simply have to set the form (following makes selections to go back to default)
     document.getElementById('userinput').reset();
+    // Call previous function
     showHideShots();
 }
 
-async function playGame () {
+async function playGame () { 
 
-    // Where can we get game from?
-    let game = $('input[type=radio][name=game]:checked').val(); // Should pull out the game we're playing
-    let shot = $('input[type=radio][name=shot]:checked').val(); // Same line as shot-line
+    // Where can we get the game from?
+    // Should pull out the game we're playing
+    let game = $('input[type=radio][name=game]:checked').val(); 
+    // Same line as shot-line
+    let shot = $('input[type=radio][name=shot]:checked').val(); 
 
-    let baseurl = window.location.href + 'app/' // From the browser, it will give the full href path for whatever you're looking at 
+    // From the browser, it will give the full href path for whatever you're looking at 
+    let baseurl = window.location.href + 'app/' 
     console.log(baseurl)
-    let url = baseurl + game + '/play/' + shot // Play the basic game without any other input?
+    // Play the basic game without any other input?
+    let url = baseurl + game + '/play/' + shot 
     console.log(url)
 
-    // The following fetch should work
-
+    // The following will send a call to the correct endpoint of the API server based on input parameters
     let response = await fetch(url)
     let result =  await response.json()
+    
+    // Finally, log the result var. from above onto the console
     console.log(result)
 }
