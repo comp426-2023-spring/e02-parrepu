@@ -10,7 +10,6 @@ h1 {
 label {
     font-family: 'Trebuchet MS', sans-serif;
     color: gray;
-    padding-left: 750px;
 }
 
 .centerSubmit{
@@ -21,6 +20,10 @@ label {
 .centerPlayStart{
     text-align: center;
     background-color: azure;
+}
+
+.centerbuttons{
+    text-align: center;
 }
 
 .rpsls {
