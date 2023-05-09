@@ -42,6 +42,6 @@ async function playGame () {
     let response = await fetch(url)
     let result =  await response.json()
     
-    // Finally, log the result var. from above onto the console
+    // Finally, log the result variable from above onto the console
     console.log(result)
 }
