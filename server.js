@@ -133,5 +133,5 @@ app.all('/app/*', (req, res, next) => {
     res.status(404).send('404 NOT FOUND'); // Change following number to '404'
 })
 
-// Do I need to do a 'process.exit(0)' here? -> Update: Don't include right now
+// Do I need to do a 'process.exit(0)' here? -> Update: Don't include for right now
 // process.exit(0);
