@@ -8,17 +8,17 @@ h1 {
 }
 
 label {
-    color: purple;
-    padding-left: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: gray;
+    padding-left: 750px;
 }
 
-input {
-    color: red;
-    padding-left: 100px;
+.centerSubmit{
+    text-align: center;
 }
 
-p {
-
+.centerPlayStart{
+    text-align: center;
 }
 
 .rpsls {
